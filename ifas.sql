@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS ifas (     `id` String,     `otherId` String, `createdAt` Date ) ENGINE = MergeTree(createdAt,(id,otherId), 8192)
